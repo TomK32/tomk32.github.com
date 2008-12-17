@@ -14,21 +14,26 @@
 
       body {
         background: url(tomk32.jpg) no-repeat;
+		background-position: top right;
       }
 
-      ul {
+      #content {
         position: absolute;
-        left: 850px;
+        right: 550px;
         top: 30px;
-        list-style-type: none;
       }
+	  ul {
+        list-style-type: none;
+	}
 
       #repos {
-        top: 130px;
+		margin: 40px 0 0 0;
+		padding-left: 0;
+		color: #eee;
       }
 
       a {
-        color: #bbb;
+        color: #ccc;
         font-family: "Lucida Grande", sans-serif;
         line-height: 18px;
       }
@@ -60,14 +65,13 @@
     </script>
   </head>
   <body>
-    <ul>
-      <li><a href="http://github.com/tomk32">My GitHub projects</a></li>
-      <li><a href="http://ananasblau.com">My blog ananasblau.com</a></li>
-      <li><a href="http://twitter.com/tomk32">My Twitter profile</a></li>
-      <li><a href="mailto:tomk32@gmx.de">tomk32@gmx.de</a></li>
-    </ul>
+	<div id="content">
+		<p>I totally love my <a href="http://github.com/tomk32">GitHub projects</a>
+		and sometime I blog about rails on my blog <a href="http://ananasblau.com">ananasblau.com</a> or on my grunge with rspec and so on my <a href="http://twitter.com/tomk32">Twitter profile</a>. If you think this is just too much computer stuff, have a look at my <a href="http://flickr.com/photos/TomK32">flickr</a>.
+    </p>
     <ul id="repos">
       <li><h3>repositories</h3></li>
     </ul>
+	</div>
   </body>
 </html>
